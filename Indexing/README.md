@@ -28,11 +28,11 @@ Run `inverted_index.py`.
 Run `positional_index.py`.
 
 ## Sample Queries
-**Input**
+**Input**<br/>
 Enter query<br/>
 *will be sent*
 
-**Output**
+**Output**<br/>
 Document Name [Position of last word]<br/>
 comp.graphics/37261 [224]<br/>
 comp.graphics/38377 [5044]<br/>
@@ -41,11 +41,11 @@ comp.graphics/38851 [5148]<br/>
 comp.graphics/38920 [215]<br/>
 comp.graphics/38971 [133]
 
-**Input**
+**Input**<br/>
 Enter query<br/>
 *submission deadline is*
 
-**Output**
+**Output**<br/>
 Document Name [Position of last word]<br/>
 comp.graphics/37261 [215]<br/>
 comp.graphics/38609 [216]
