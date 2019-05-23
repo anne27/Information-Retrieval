@@ -49,5 +49,3 @@ Enter query
 Document Name [Position of last word]
 comp.graphics/37261 [215]
 comp.graphics/38609 [216]
-
-### End
