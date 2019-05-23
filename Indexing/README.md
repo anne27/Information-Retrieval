@@ -1,4 +1,4 @@
-#Indexing
+# Indexing
 
 We use the 20 Newsgroups dataset to build a unigram inverted index.
 Further, support is provided for the following boolean commands:
@@ -9,7 +9,7 @@ Further, support is provided for the following boolean commands:
 
 Finally, support for searching for phrase queries using Positional Indexes. For simplicity, this index is built only on comp.graphics and rec.motorcycles folders.
 
-##Description
+## Description
 
 Preprocessing steps:
 - Documents are tokenized using NLTK’s TweetTokenizer.
@@ -20,14 +20,14 @@ Preprocessing steps:
 - Tokens are stemmed using PorterStemmer.
 Stop words are not removed since they can appear adjacently in a query, e.g. “To be or not to be”.
 
-##Running the Code
+## Running the Code
 
-###Inverted Index
+### Inverted Index
 Run `inverted_index.py`.
-###Positional Index
+### Positional Index
 Run `positional_index.py`.
 
-##Sample Queries
+## Sample Queries
 **Input**
 Enter query
 *will be sent*
@@ -50,4 +50,4 @@ Document Name [Position of last word]
 comp.graphics/37261 [215]
 comp.graphics/38609 [216]
 
-###End
+### End
