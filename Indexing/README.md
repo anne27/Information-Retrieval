@@ -6,7 +6,7 @@ Further, support is provided for the following boolean commands:
 - x AND y
 - x AND NOT y
 - x OR NOT y
-
+<br/>
 Finally, support for searching for phrase queries using Positional Indexes. For simplicity, this index is built only on comp.graphics and rec.motorcycles folders.
 
 ## Description
@@ -29,23 +29,23 @@ Run `positional_index.py`.
 
 ## Sample Queries
 **Input**
-Enter query
+Enter query<br/>
 *will be sent*
 
 **Output**
-Document Name [Position of last word]
-comp.graphics/37261 [224]
-comp.graphics/38377 [5044]
-comp.graphics/38609 [225]
-comp.graphics/38851 [5148]
-comp.graphics/38920 [215]
+Document Name [Position of last word]<br/>
+comp.graphics/37261 [224]<br/>
+comp.graphics/38377 [5044]<br/>
+comp.graphics/38609 [225]<br/>
+comp.graphics/38851 [5148]<br/>
+comp.graphics/38920 [215]<br/>
 comp.graphics/38971 [133]
 
 **Input**
-Enter query
+Enter query<br/>
 *submission deadline is*
 
 **Output**
-Document Name [Position of last word]
-comp.graphics/37261 [215]
+Document Name [Position of last word]<br/>
+comp.graphics/37261 [215]<br/>
 comp.graphics/38609 [216]
