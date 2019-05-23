@@ -6,15 +6,14 @@ Further, support is provided for the following boolean commands:
 - x AND y
 - x AND NOT y
 - x OR NOT y
-<br/>
 Finally, support for searching for phrase queries using Positional Indexes. For simplicity, this index is built only on comp.graphics and rec.motorcycles folders.
 
 ## Description
 
 Unigram inverted index is built on the entire 20 newsgroups dataset, in the form of a dictionary. The format of the inverted index is <br/>
 `{term: [total_frequency, [list of docs containing term]]}`<br/>
-For example,
-`inv_index['graph']` is
+For example,\
+`inv_index['graph']` is\
 `[75, [1054, 1139, 1214, 1214, 1214, 1215, 1215, 1245, 1288, 1444, 1530, 1616,
 1616, 1681, 1690, 1690, 1690, 1691, 1691, 1718, 1771, 1984, 1992, 1992, 2329,
 2333, 3171, 3674, 3708, 5003, 5016, 5027, 5027, 5038, 5038, 5038, 5116, 5116,
@@ -23,7 +22,7 @@ For example,
 14074, 14405, 14521, 14521, 14554, 14554, 14680, 14739, 16208, 16897,
 18535, 18779]]`<br/>
 
-Here, `inv_index` of the term ‘graph’ contains a list, with the first term as 75, which is the overall no. of documents containing the term, and a list containing the document IDs of the term.\
+Here, `inv_index` of the term ‘graph’ contains a list, with the first term as 75, which is the overall no. of documents containing the term, and a list containing the document IDs of the term.
 
 Preprocessing steps:
 - Documents are tokenized using NLTK’s TweetTokenizer.
@@ -79,7 +78,7 @@ x OR y | sci OR pyjama
 'sci.med/58800', 'sci.crypt/15900', 'sci.med/59188', 'comp.sys.mac.hardware/52342',
 'sci.med/59576', 'sci.med/59323', 'sci.space/62414', 'sci.med/59077', 'sci.med/59207']`
 
-### Positonal Index
+### Positional Index
 
 **Input**<br/>
 Enter query<br/>
