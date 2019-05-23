@@ -90,17 +90,18 @@ def map_to_filename(doc_list, doc_mapping):
         final_doc_list.append(doc_mapping[doc])
     return final_doc_list
 
-inv_index=np.load('inv_index.npy').item()
-doc_mapping=np.load('doc_mapping.npy').item()
+
 fileno=0                                                # Map the doc name to a single integer (ID).
-
 folder_names=natsorted(os.listdir("20_newsgroups"))
-
 stemmer = PorterStemmer()
 stop_words = set(stopwords.words('english')) 
 
-## FORMING INVERTED INDEX ##
-if not path.exists('inv_index.npy') or not path.exists('doc_mapping.npy'):
+if path.exists('inv_index.npy') and path.exists('doc_mapping.npy'):
+	inv_index=np.load('inv_index.npy').item()
+	doc_mapping=np.load('doc_mapping.npy').item()
+
+else:
+	## FORMING INVERTED INDEX ##
 	for folder_name in folder_names:
 	    file_names=natsorted(os.listdir("20_newsgroups/"+folder_name))
 	    print(folder_name)
