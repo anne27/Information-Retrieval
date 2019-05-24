@@ -1,7 +1,9 @@
 # Query OptimizationQ
 
-We use Tf-Idf based vector space document retrieval to get top 10 documents based on a cosine similarity between query and document vector. Further, we provide a client for a user to give Relevance Feedback (tell which all docs are relevant and which are irrelevant). Using Rocchio algorithm, optimize the query. Keep doing this process of taking user feedback and updating the query vector until the user quits the program.\
-For simplicity, we use only comp.graphics and rec.motorcycles documents.
+We use Tf-Idf based vector space document retrieval to get top 10 documents based on a cosine similarity between query and document vector. Further, we provide a client for a user to give Relevance Feedback (tell which all docs are relevant and which are irrelevant). \
+
+We optimize the query using Rocchio's Algorithm, and keep doing this process of taking user feedback and updating the query vector until the user quits the program.\
+For simplicity, we use only `comp.graphics` and `rec.motorcycles` documents.
 
 ## Description
 
